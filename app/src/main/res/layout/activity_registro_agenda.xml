@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leaf"
+    tools:context=".Vista.RegistroAgenda">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Here you can put your logo or brand name -->
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="16dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/contacto"/>
+
+
+
+            <EditText
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="Nombre"
+                android:textColorHint="#fff"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:layout_marginTop="70dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <EditText
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="Telefono"
+                android:textColorHint="#fff"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/ic_lock_white_24dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#fff"
+                android:text=" Recordar Contacto "
+                android:padding="8dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_login"
+                android:text="Guardar Contacto"
+                android:textColor="#f16f7d"
+                android:textAllCaps="false"
+                android:padding="16dp"
+                android:clickable="true"
+                android:layout_marginLeft="100dp"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_marginTop="24dp"
+                android:textSize="18sp"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

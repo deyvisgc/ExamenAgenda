@@ -19,7 +19,12 @@
         <activity
             android:name=".Vista.Home"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Vista.RegistroAgenda"
+            android:theme="@style/AppTheme.CustomTheme"
+            android:label="@string/title_activity_registro_agenda"
+            ></activity>
     </application>
 
 </manifest>

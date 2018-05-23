@@ -35,7 +35,7 @@ public class Home extends AppCompatActivity   {
 
                 switch (item.getItemId()){
                     case R.id.inicioItem:
-                        Intent intent=new Intent(Home.this,MainActivity.class);
+                        Intent intent=new Intent(Home.this,RegistroAgenda.class);
                         startActivity(intent);
                         break;
                 }
